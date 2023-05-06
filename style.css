@@ -1,0 +1,261 @@
+/* Change scrollbar width and height */
+/* Change the color of the scrollbar */
+::-webkit-scrollbar {
+  background-color: #8dc1a9;
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #31ae80;
+  border-radius: 5px;
+}
+
+/* Add a custom style to the scrollbar */
+::-webkit-scrollbar-track {
+  background: #138445;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+html {
+  scrollbar-width: thin;
+}
+
+/* Change scrollbar thumb color and border radius */
+body::-webkit-scrollbar-thumb {
+  background-color: #005d3b;
+  border-radius: 6px;
+}
+
+/* Change scrollbar thumb color and border radius */
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+/* Body styles */
+@font-face {
+  font-family: 'Denk One';
+  src: url('DenkOne-Regular.ttf');
+}
+body {
+  background-color: #ebe0d5;
+  background-image: url('background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Denk One;
+  color: #023047;;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  scrollbar-color: #f5f5f5 #ffffff;
+}
+#hero{
+  font-size: 20px;
+}
+#about{
+  font-size: 15px;
+}
+/* Header styles */
+header {
+  background-color: #8dc1a9;
+  color: #fffba8;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size:75px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+header h2 {
+  font-size:10px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  position: relative;
+  left: 120px;
+  bottom: 15px;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #4b9d7f;
+  color: #91863f;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 10px;
+  background-color: #13b97e;
+  box-sizing: border-box;
+  padding: 3px;
+  border-radius: 1px;
+}
+
+nav ul li:first-child {
+  margin-left: 1000px;
+}
+
+nav a {
+  color: #fffa96;
+  text-decoration: none;
+}
+.slider-container ::-webkit-scrollbar {
+  background-color: #f5f5f5;
+   background-color: #555;
+  scrollbar-width: thin;
+}
+.slider-container {
+  position: relative;
+  width: 960px;
+  height: 540px;
+  overflow: scroll;
+  scrollbar-width: thin;
+   scrollbar-color: #f5f5f5 #ffffff;
+}
+
+.slider-wrapper {
+  position: relative;
+  width: calc(960px * 5);
+  height: 540px;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-wrapper img {
+  width: 960px;
+  height: 540px;
+  object-fit: cover;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.slider-button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.slider-button[disabled] {
+  visibility: hidden;
+}
+
+@keyframes slide-animation {
+  0% { transform: translateX(0); }
+  16.666% { transform: translateX(0); }
+  33.333% { transform: translateX(-100%); }
+  50% { transform: translateX(-100%); }
+  66.666% { transform: translateX(-200%); }
+  83.333% { transform: translateX(-200%); }
+  100% { transform: translateX(-300%); }
+}
+
+/* Main content styles */
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 30px 0;
+  link-decoration: none;
+}
+main a:link {
+  color: #f7d59e; /*beige color*/
+  background-color: #31ae80;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+  padding: 10px;
+  float: left;
+    position: relative;
+  left: 10px;
+
+}
+main a:visited {
+  color: #31ae80; /*light green color*/
+    background-color: #f7d59e;
+}
+
+main a:hover {
+  color: #a2ffdd; /*beige color*/
+  text-decoration: none;
+}
+main article {
+  width: 60%;
+  margin-right: 40px;
+}
+
+main aside {
+  width: 30%;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f7d59e;
+  color: #333;
+  text-align: center;
+  padding: 1px;
+  font-size: 25px;
+}
+
+/* Button styles */
+button {
+  background-color: #8dc1a9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4b9d7f;
+}
+
+#downlbutton a{
+  background-color: #f7d59e;
+  color: #31ae80;
+font-size: 25px; 
+  justify-content: space-between;
+  align-items: right;
+  padding: 15px;
+  border-radius: 3px;
+  width: 410px;
+}
+#brochdown a {
+  background-color: #f7d59e;
+  color: #31ae80;
+  justify-content: space-between;
+  align-items: right;
+  padding: 10px;
+  border-radius: 3px;
+  width: 200px;
+
+}
+
+
+
